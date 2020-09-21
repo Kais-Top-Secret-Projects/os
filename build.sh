@@ -24,7 +24,7 @@ echo -e "
 "
 
 apt-get update
-apt-get install -y live-build patch ubuntu-keyring
+apt-get install -y live-build patch 
 
 # TODO: Remove once live-build is able to acommodate for cases where LB_INITRAMFS is not live-boot:
 # https://salsa.debian.org/live-team/live-build/merge_requests/31
@@ -32,7 +32,7 @@ patch -d /usr/lib/live/build/ < live-build-fix-syslinux.patch
 
 # TODO: Remove this once debootstrap 1.0.117 or newer is released and available:
 # https://salsa.debian.org/installer-team/debootstrap/blob/master/debian/changelog
-ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/focal
+# ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/focal
 
 build () {
   BUILD_ARCH="$1"
