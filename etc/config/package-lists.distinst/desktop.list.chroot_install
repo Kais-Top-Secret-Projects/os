@@ -1,6 +1,3 @@
-# elementary meta packages
-elementary-desktop
-elementary-minimal
-elementary-standard
+xfce4
 
 @XORG_HWE
